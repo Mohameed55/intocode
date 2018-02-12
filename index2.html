@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>INTOCODE</title>
+  <link href="css/style.css" rel="stylesheet" />
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <div class="all___block">
+
+
+    <!-- Début du logo|titre -->
+    <header>
+      <div>
+        <h1>
+          <span>I</span>
+          <span>N</span>
+          <span>_</span>
+          <span>T</span>
+          <span>O</span>
+          <span>_</span>
+          <span>C</span>
+          <span>O</span>
+          <span>D</span>
+          <span>E</span>
+        </h1>
+      </div>
+      <!-- Fin du logo|titre -->
+
+      <!-- menu -->
+      <nav id="header__menu">
+        <ul>
+          <li><a class="header__menu--one" href="index.html"> <span><</span>
+            <span>HTML</span>
+            <span>></span> </a>
+          </li>
+          <li><a class="header__menu--deux" href="index2.html"> <span><</span>
+            <span>CSS</span>
+            <span>></span> </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- menu__fin -->
+    </header>
+
+
+  <div class="block__sommaire_and_dody">
+      <!-- Sommaire -->
+      <div class="block__sommaire">
+        <h2> Sommaire </h2>
+        <nav>
+          <ul> <a href="#intro">Introduction </a></ul>
+          <ul> <a href="#selecteur__css">Sélecteurs </a></ul>
+          <ul> <a href="#proprietes__css">Propriétés et valeurs CSS <br> courantes </a></ul>
+          <ul><a href="#padding__css">Margin/Padding </a></ul>
+          <ul><a href="#flexbox">Flexbox </a></ul>
+        </nav>
+      </div>
+      <!-- Sommaire -->
+
+
+    <div id="intro" class="block__body">
+      <section>
+        <article >
+          <h3>Introduction</h3>
+    			<h4>CSS : </h4>
+    			<p>	Le terme CSS est l'acronyme anglais de Cascading Style Sheets qui peut se traduire par "feuilles de style en cascade".
+    			Le CSS est un langage informatique utilisé sur l'internet pour mettre en forme les fichiers HTML ou XML.
+    			Ainsi, les feuilles de style, aussi appelé les fichiers CSS, comprennent du code qui permet de gérer le design d'une page en HTML.
+    			</p>
+    			<p>Voici un exemple de règle CSS :</p>
+          <div class="article__code">
+            <code>p {font-color: red;
+              font-size: 12px;}
+            </code>
+          </div><br>
+    			<p id="selecteur__css">Explications : cette règle définit la couleur et la
+    			taille du texte pour les éléments <<code>p></code> (paragraphes) d'un
+    			document HTML. Ainsi, tous les paragraphes auront une police
+    			de couleur rouge et une taille de 12 pixel.
+    			</p>
+    		</article>
+
+        <article >
+          <h3>Les selecteurs</h3>
+          <p>Un sélecteur est un attribut qui permet de cibler un élément.</p>
+          <div class="article__code">
+            <code>selecteur{ propriété: valeur; } </code>
+          </div>
+          <p>Pour les balises types <<code>header></code> <<code>section></code> <<code>h1></code> <<code>p></code></p>
+
+          <p>Pour le modifier dans le css:</p>
+          <div class="article__code">
+            <code>header{</code>
+            <code>propriété: valeur;
+            }</code>
+          </div>
+          <p>Quand on crée une classe à une balise comme par exemple:</p>
+          <div class="titre__html">html:</div>
+          <div class="article__code">
+            <<code>p class=“exemple“> </p></code>
+          </div>
+          <div class="titre__CSS">css:</p></div>
+          <div class="article__code">
+            <code>.exemple{
+            propriété: valeur;
+            }</code>
+          </div>
+          <p id="proprietes__css">Le point permet de sélectionner une classe dans le html.</p>
+        </article>
+
+
+        <!-- Début de Propriétées et valeurs  CSS courantes-->
+        <article >
+    		  <h3>Proprietes et valeurs CSS courantes</h3>
+    		  <p>	La syntaxe de base du CSS est celle-ci :</p>
+          <div class="article__code">
+    		    <code>
+    		      selecteur {
+    		      propriete : valeur;
+    		      }
+  		      </code>
+          </div><br>
+    		  <p>	Certaines proprietes CSS sont incontournables a la construction
+    		  d'un site web et sont donc systematiquement utilises.
+    		  </p>
+    		  <p><strong>Voici une liste non exhaustive de certaines de ces proprietes :
+          </strong></p>
+    		  <h4>Les proprietes de mise en forme du texte</h4>
+    		  <p>Propriété "font-family"</p>
+          <div class="article__code">
+    		    <code>
+    		      selecteur {
+    		      font-family:Arial, sans-serif;}
+    		    </code>
+          </div><br>
+
+
+    		  <p> Cette propriété fournit le nom de la police utilisée.</p>
+    		  <p>Propriété "@font-face"</p>
+    		  <p>Valeurs possibles: nom et source de la police.</p>
+    		  <p>Cette propriété fournit la source de la police.</p>
+
+    		  <p>Propriété "font-size"</p>
+    		  <p>Valeurs possibles: 1em, 1px, 1%</p>
+    		  <p>Cette propriété définit la taille du texte.</p>
+
+    		  <p>Propriété "font-weight:</p>
+    		  <p>Valeurs possibles:bold, normal</p>
+    		  <p>Cette propriété met en gras le texte sélectionné</p>
+
+    		  <p>Propriété "font-style</p>
+    		  <p>Valeurs possibles:italic, normal</p>
+    		  <p>Cette propriété met en italique le texte sélectionné</p>
+
+    		  <p>Propriété "text-decoration"</li>
+    		  <p>Valeurs possibles:underline,overline,blink</p>
+    		  <p>Cette propriété souligne ou barre ou fait clignoter le texte.</p>
+
+    		  <h4>Les proprietes de couleur</h4>
+    		  <p>Propriété "color"</p>
+    		  <p>Valeurs possibles: RGB, hexadécimal</p>
+          <p>Cette propriété définit la couleur du texte.</p>
+
+    		  <p>Les proprietes de fond "Background"</p>
+          <p>Valeurs possibles:Super-propriété contenant "Super-propriété contenant
+          "background-size"(1em,1px ou 1%),"background-image"(img)
+          ,"background-color"(RGB, hexadécimal) </p>
+    		  <p>Cette propriété souligne ou barre ou fait clignoter le texte.</p>
+
+    		  <p>Les proprietes des bordures "Border"</p>
+          <p>Valeurs possibles:Super-propriété contenant "border-width"(1em,1px ou 1%),"border-style"(solid,dashed, dotted)
+          ,"border-color"(RGB, hexadécimal) </p>
+    		  <p  id="padding__css">Cette propriété entoure le contenu par une bordure.</p>
+    	  </article>
+            <!-- Fin Propriétées et valeurs CSS courantes -->
+        <article>
+          <h3>Padding et margin:</h3>
+          <p> Pour chaque élément html on peut  définir l'espacement qui le séparera des autres éléments (margin) et les espacements intérieurs (padding).
+          </p>
+          <img src="image/margin_padding.jpg" alt="exemple schéma margin et padding" />
+          <p> Margin: La marge externe définit l'espace entre le bloc et son extérieur,
+          Cette dernière spécifie d'un coup la valeur de la marge pour les quatre côtés à la fois.
+          </p>
+          <p> On peut aussi specifier une valeur en pourcentage ou en px
+          pour l'un des quatre coté .
+          </p>
+          <p> Exemple: .article{margin: 0px 10px 20px 30px} ou .article{ margin-left / top / right / buttom : 10px }.</p>
+          <p> Padding: Le principe reste le même que tout à l'heure sauf
+          qu'à la place de margin, on utilise padding.
+          </p>
+          <p>Le padding est une zone, appelée aussi "marge interne" .
+          Elle est utilisée pour entourer de marge le "contenu" à
+          l'aide de 4 valeurs.
+          </p>
+          <p>La padding permet aussi de definir un distance entre des élément .</p>
+          <p id="flexbox">Exemple: padding-top : marge intérieure en haut
+          padding-bottom : marge intérieure en bas
+          padding-left : marge intérieure à gauche
+          padding-right : marge intérieure à droite
+        </article>
+
+      <!--Debut Flebox -->
+    	  <article>
+          <h3>Presentation de Flexbox</h3>
+          <h4>Introduction</h4>
+          <p>	Flexbox est un module CSS utilise pour la mise en page. Flexbox est organise selon un systeme bloc/element. Le principe est simple : un bloc quelconque auquel est applique la propriete ''display'' et la valeur ''flex/inline-flex'' est defini en tant que conteneur flex.
+          </p>
+          <p>	Les elements a l'interieur de ce conteneur flex peuvent alors etre agences selon les proprietes flexbox.
+          </p>
+          <p>	La syntaxe de base est celle-ci :</p>
+          <code>
+            conteneur {
+    		    display : flex;
+    		    }
+          </code>
+          <h4>Liste non-exhaustive des proprietes et valeurs Flexbox</h4>
+          <h4>Les proprietes applicables aux conteneurs</h4>
+          <p>Propriete ''display'' :</p>
+          <p>Valeurs possibles : flex, inline-flex.</p>
+          <p>	Cette propriete definit un conteneur flex, de type bloc
+          avec la valeur ''flex'' ou de type inline avec la valeur
+          ''inline-flex''.
+          </p>
+          <p>Propriété ''flex-direction''</p>
+          <p>Valeurs possibles :row, row-reverse, column, column-reverse.</p>
+          <p>	Cette propriété définit l'axe et la direction où sont placés les éléments du bloc.</p>
+          <p>	En ligne de gauche à droite pour ''row'' et de droite à gauche pour ''row-reverse'', en colonne de haut en bas pour
+          '' column'' et de bas en haut pour ''column-reverse''.</p>
+          <p>Propriété ''flex-wrap''</p>
+          <p>Valeurs possibles :nowrap, wrap, wrap-reverse.</p>
+          <p>Cette propriété définit l'agencement en ligne des éléments.</p>
+          <p>Sur une seule ligne avec ''nowrap'', sur plusieurs avec
+          ''wrap'' de haut en bas et de bas en haut avec ''wrap-reverse''.
+          </p>
+          <p>Propriété ''justify-content''</p>
+          <p>Valeurs possibles :flex-start, flex-end, center, space-between.
+          </p>
+          <p>Cette propriété définit la répartition de l'espace entre les éléments.</p>
+          <p>Propriété ''Flex-start''</p>
+          <p>	Les éléments sont groupés au début du
+          conteneur, le bord du premier élément aligné avec le bord
+          du conteneur.
+          </p>
+          <p>Propriété ''Flex-end''</p>
+          <p>	Les éléments sont regroupés à la fin du
+          conteneur, le bord du dernier élément aligné avec le bord du conteneur.
+          </p>
+          <p>Propriété ''Center''</p>
+          <p>Les éléments sont groupés au centre du conteneur</p>
+          <p>Propriété''Space-between''</p>
+          <p>Les premiers et derniers élément
+          sont alignés aux bords du conteneur, l'espace entre les éléments étant égaux
+          </p>
+          <h4>Les propriétés applicables aux éléments</h4>
+          <p>Propriété "Order"</p>
+          <p>Valeurs possibles : nombre entiers</p>
+          <p>Cette propriété définit l'ordre d'affichage des
+          éléments selon leur nombre, en ordre croissant.
+          </p>
+          <p>Propriété ''flex-grow''</p>
+          <p>Valeurs possibles : nombre entiers</p>
+          <p>Cette propriété définit la capacité d'un élément à grossir, en fonction de son nombre et de celui des autres éléments. Un élément défini à 2 et les autres à 1 pourra prendre deux fois plus d'espace que les autres.</p>
+          <p>Propriété ''flex-shrink''</p>
+          <p>Valeurs possibles : nombre entiers</p>
+          <p>Cette propriété complémentaire à la propriété
+          ''flex-grow'' définit la capacité d'un élément à
+          rétrecir, en fonction de son nombre et de celui des autres éléments. Un élément défini à 2 et les autres à 1 pourra se réduire de moitié.</p>
+        </article>
+            <!-- Fin Flexbox -->
+      </section>
+    </div>
+  </div>
+</body>
+</html>

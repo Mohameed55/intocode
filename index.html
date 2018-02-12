@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>INTOCODE</title>
+  <link href="css/style.css" rel="stylesheet" />
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <div class="all___block">
+
+
+    <!-- Début du logo|titre -->
+    <header>
+      <div>
+        <h1>
+      <span>I</span>
+      <span>N</span>
+      <span>_</span>
+      <span>T</span>
+      <span>O</span>
+      <span>_</span>
+      <span>C</span>
+      <span>O</span>
+      <span>D</span>
+      <span>E</span>
+    </h1>
+      </div>
+      <!-- Fin du logo|titre -->
+
+      <!-- menu -->
+      <nav id="header__menu">
+        <ul>
+          <li><a class="header__menu--one" href="index.html"> <span></span>
+          <span>< HTML ></span>
+          <span></span> </a></li>
+
+          <li><a class="header__menu--deux" href="index2.html"> <span><</span>
+          <span>CSS</span>
+          <span>></span> </a></li>
+        </ul>
+      </nav>
+      <!-- menu__fin -->
+    </header>
+
+
+    <div class="block__sommaire_and_dody">
+      <!-- Sommaire -->
+      <div class="block__sommaire">
+        <h2> Sommaire </h2>
+        <nav>
+          <ul> <a href="#intro">Introduction </a></ul>
+          <ul> <a href="#structure_de_base">Structure de base </a></ul>
+          <ul> <a href="#balise_structurante">Balise structurante </a></ul>
+          <ul> <a href="#creation_fichier_html">Création de fichier HTML </a></ul>
+          <ul> <a href="#balise_inlineblock">Les balises de type <br>
+          block et inline </a></ul>
+          <ul> <a href="#bem">BEM </a></ul>
+        </nav>
+      </div>
+      <!-- Sommaire -->
+
+
+      <div id="intro" class="block__body">
+        <section class="html__page">
+          <!-- Debut article introduction HTML -->
+          <article >
+            <h3>Introduction</h3>
+            <h4>HTML</h4>
+            <p>
+            Comme son nom l’indique, le HTML, ou « HyperText Markup Language », est un langage permettant de réaliser des pages web.<br>
+            Tout site internet a besoin de HTML pour s’afficher. Lorsque l’on crée un site web ,nous allons avoir besoin d'utiliser du HTML.<br>
+            Définition : HyperText Markup Language (HTML) est un langage de “mark up (balisage)” qui définit la structure logique d’un document WWW diffusé sur le Web. </p>
+            <h4>La dérive HTML :</h4>
+            <ul>
+              <li> Conçu comme un langage de structuration logique du contenu.</li>
+              <li> Elle est utilisé comme langage de présentation et de mise en page.</li>
+            </ul>
+
+            <h4>A quoi cela sert?</h4>
+            <p id="structure_de_base">Il permet de faire des documents HTML qui pourront être lu, chargé par des navigateur, ce qui veut dire que si vos pages sont sur un serveur, elles seront accessibles sur le www : (Worl Wide Web) via un client Web (browser). Ainsi quiconque
+            ayant un accès au Web et connaissant l'adresse de vos pages pourra les browser.<br>
+            Ce language vous permet donc de créer des documents HTML dans lesquels vous pourrez mettre ce que vous voudrez à condition de respecter le principe des différents synthaxe HTML.
+            </p>
+          </article>
+          <!-- Fin article introduction html -->
+
+
+          <!-- Début de la Structure de base -->
+          <article >
+            <h3> Structure base HTML </h3>
+            <p>Le document HTML commence toujours par ce que nous appelons la structure de base. Cette structure est obligatoire et constant.<br>
+            ex.:</p>
+            <div class="article__code">
+              <h5 class="titre__html">HTML</h5>
+              <code class="article__code--base">
+              <<span>!DOCTYPE html></span><br><br>
+              &nbsp; <<span>html></span><br>
+              &nbsp;  &nbsp;<<span>head></span><br>
+              &nbsp;  &nbsp;  &nbsp;<<span>title>Titre<</span>/title><br>
+              &nbsp;  &nbsp;  &nbsp;<<span>meta charset="utf-8"></span><br>
+              &nbsp;  &nbsp; <<span>/head></span><br>
+              &nbsp;<<span>body></span><br>
+              &nbsp;<<span>/body></span><br>
+              &nbsp; <<span>/html></span>
+              </code>
+            </div>
+              <p>Il est possible de comprendre le document HTML de manière très simple, grâce à une division des blocs, selon la structure suivante:
+              </p>
+              <ul>
+                <li>Définition du document (!DOCTYPE) </li>
+                <li>meta</li>
+                <li>head</li>
+                <li>body</li>
+              </ul>
+              <h4> Définition du document (!DOCTYPE) </h4>
+              <p>Le doctype n'est pas une balise HTML, mais une déclaration pour le navigateur et les autres programmes qui peuvent lire votre site.
+              </p>
+              <p><strong>ATTENTION</strong> Le doctype est OBLIGATOIRE et doit toujours être la PREMIERE LIGNE de votre document.
+              </p>
+              <h4>META</h4>
+              <p>Les balises Meta servent à décrire le contenu de votre site aux moteurs de recherche, c’est dans ces balises que nous entrerons les mots-clés qui faciliteront la vie des utilisateurs dans la recherche du site.</p>
+              <p> Par exemple : Grâce à eux, vous pouvez également "signer" votre site pour déclarer que vous en êtes l’auteur.
+              </p>
+              <h4>HEAD</h4>
+              <p> Contient des informations qui ne sont pas transposées de manière transparente à l'utilisateur ou lecteur du document. Ce sont des données implicites. En pratique, tout le contenu de l'en-tête est délimité dans la balise head.
+              </p>
+              <h4>BODY</h4>
+              <p> C'est le document lui-même, c'est-à-dire l'information lisible par l'utilisateur / lecteur du document. C'est tout le texte que l'on souhaite présenter, ainsi que toutes les formes de médias sortants. De plus, toute présentation de saisie
+              de données (formulaires) s'applique également dans cette section du document.
+              <p id="balise_structurante"> En pratique, le corps du document est délimité par la paire de balises
+              <<span> body> et
+              <</span>/<span> body</span>>.</p>
+          </article>
+          <!-- Fin de la Structure de base -->
+
+
+
+          <!-- Début de Balise structurante -->
+          <article >
+            <h3>Balise structurante</h3>
+            <p> Les balises structurantes permets de structurer votre page web et votre code, comme vous pouvez le voir dans le schéma ci-dessous.
+            </p>
+            <img src="image/balise_structurante.png" alt="Schéma" />
+            <p> La balise header, est pour l’en tête avec la balise nav, qui veux dire navigation, à l’intérieur il y aura le menu.<br>
+            Ensuite nous avons la balise section celle la permet de regrouper des contenus de même thème.
+            </p>
+            <p> Pour la balise article, elle regroupe des éléments indépendant. Exemple pour des articles de journaux.<br>
+            La balise inside sert a mettre des informations complémentaires, il se situe souvent à droite de la page.
+            </p>
+            <p>Pour finir le footer est le pied de page, on y trouve souvent les liens contact, nom, mentions légales.
+            </p>
+            <h4>Il y a aussi des balises pour structurer votre contenu:</h4>
+            <ul>
+              <li><strong>h1</strong>: pour le titre principal.</li>
+              <li><strong>h2</strong>: les sous titres.</li>
+              <li><strong>h3</strong>: etc, ...</li>
+              <li><strong>p</strong>: pour les paragraphes.</li>
+              <li><strong>ul</strong>, <strong>li</strong>: pour crée une liste, exemple pour les menus.</li><br>
+            </ul>
+
+            <div class="article__code">
+              <code>
+                <<span>article></span><br><br>
+                <<span>h1>Titre principal<</span>/h1><br><br>
+                <<span>h2>Sous titre<</span>/h2><br><br>
+                <<span>p>paragraphe<</span>/p><br><br>
+                <<span>ul><br>
+                <</span>li>liste<<span>/li><br>
+                <</span>li>liste<<span>/li><br>
+                <</span>/ul><br><br>
+                <<span>img src=""></span>
+              </code>
+            </div>
+              <h4>Ensuite voici la balise image pour mettre des images sur votre site:</h4>
+              <p><code>src=</code> le lien de votre image, “ votre image“ exemple: <code>“images/nomimage.jpg/png“</code></p>
+          </article><br>  <br>  <br>
+          <!-- Fin Balise Structurante -->
+            <div id="creation_fichier_html">
+
+            </div>
+
+
+          <!--fichier creation -->
+          <article >
+            <h3>  Création de fichier HTML </h3>
+            <p> Pour mettre en forme un dossier avec les fichiers <code class="titre__html">html</code> et <code class="titre__CSS"> css </code> </p>
+            <ul>
+              <li>
+              En premier il faut crée un dossier vide avec comme nom (le nom de son site).
+              </li><br>
+              <li> Ensuite à l’intérieur de ce dossier créée deux dossiers différents, l’un ce nommant CSS et IMAGES.
+              </li><br>
+              <li> Pour continuer enregistré votre fichier html (que vous avez crée dans un logiciel comme atom ou sublime text) dans le dossier avec comme nom votre site, enregistrer le sous le nom de index.html.
+              </li><br>
+              <li>
+              Ensuite pour le fichier css, enregistrer le dans le dossier css sous le nom de style.css.
+              </li><br>
+              <li>Et mettre vos images dans le dossier images.</li>
+            </ul>
+            <p><code class="titre__html">html</code> et <code class="titre__CSS"> css </code> </p>
+            <code><link href=“css/style.css“></code><br>
+            <p>(suit le cheminement de votre dossier)</p>
+            <h4>Pour une image :</h4>
+            <img src="image/fichier.jpg">
+            <p id="balise_inlineblock">(suit le cheminement de votre dossier)</p>
+          </article>
+
+          <!--fichier creation -->
+
+
+
+
+
+          <!-- balise inlineblock-->
+          <article >
+            <h3>Les balises de type block et inline</h3>
+            <p>Les balises inline : c'est le cas par exemple des liens <code><</code>a><code><</code>/a>.</p>
+            <p>Les balises block : c'est le cas par exemple des paragraphes
+            <code><</code>p><code><</code>/p>.</p>
+            <h4>Mais comment je reconnais une balise inline d'une balise block ?</h4>
+            <p> C'est en fait assez facile :</p>
+            <p>
+              <B>block</B>: une balise de type block sur votre page web crée automatiquement un retour à la ligne avant et après.
+            </p>
+            <p> Il suffit d'imaginer tout simplement un bloc. Votre page web sera en fait constituée d'une série de blocs les uns à la suite des autres.<br>
+            Mais vous verrez qu'en plus, il est possible de mettre un bloc à l'intérieur d'un autre, ce qui va augmenter considérablement nos possibilités pour créer le design de notre site !
+            </p>
+            <p><strong>inline</strong>: une balise de type inline se trouve obligatoirement à l'intérieur d'une balise block. Une balise inline ne crée pas de retour à la ligne, le texte qui se trouve à l'intérieur s'écrit donc à la suite du texte précédent,
+            sur la même ligne (c'est pour cela que l'on parle de balise « en ligne »).
+            </p>
+            <p> Afin de mieux vous aider à assimiler quelles balises sont inline et quelles balises sont block, voici un petit tableau dressant la liste de quelques balises courantes.
+            </p><br>
+
+            <div class="article__code">
+              <h5><strong>Les balises de type block</strong></h5>
+              <code>
+                <<span>p> <br><br>
+                <</span>em> <br><br>
+                <<span>footer><br><br>
+                <</span>strong><br><br>
+                ...
+              </code>
+            </div><br>
+
+            <div class="article__code">
+              <h5><strong>Et les balises de type inline</strong></h5>
+              <code>
+                <<span>h1><br><br>
+                <</span>mark><br><br>
+                <<span>h2><br><br>
+                <</span>a><br><br>
+                <<span>article><br><br id="bem">
+                ...
+              </code>
+            </div>
+
+          </article>
+          <!-- balise inlineblock fin-->
+
+
+
+
+
+
+          <!-- Début du BEM -->
+          <article >
+            <!-- introduction BEM -->
+            <h3> BEM </h3>
+
+            <p> <strong> BEM </strong> est l'acronyme de Modificateur d'élément de bloc (Block Element Modifier ) qui consiste en un modèle qui permet de nommer des classes d'éléments HTML.<br>
+            Cette méthode nous aide à travailler de manière plus efficace, plus rapide et plus claire, en soutenant tous ceux qui sont impliqués dans le projet en question et ceux qui peuvent venir s'intégrer ou simplement «aider» dans le processus. </p>
+
+            <h4>Blocs</h4>
+            <p> L'un des principes de la Méthodologie BEM recommande l'indépendance des blocs afin de faciliter la maintenance, car il se peut qu'à l'avenir vous deviez déplacer, ajouter ou supprimer des blocs. L'indépendance des blocs facilitera certainement
+            ces tâches. En bref, nous nommons la classe d'un bloc avec un nom qui l'identifie. Par exemple :</p>
+            </p>
+
+            <div class="article__code">
+              <h5 class="titre__html">HTML</h5>
+              <code>
+                <span><<span>div class="block"><<span>/</span>div>
+              </code>
+              <h5 class="titre__CSS">CSS</h5>
+              <code>.block { }</code>
+            </div><br>
+
+
+            <!-- elements BEM -->
+            <h4 class="titre__CSS">Éléments</h4>
+            <p> Un élément est une sorte de "pièce" du bloc, un menu est un élément d'un Bloc header. La méthodologie BEM suggère que les classes de noms soient formées de sorte que le nom du bloc vienne en premier, juste après le nom de l'élément et qu'ils
+            soient séparés par deux traits de soulignement (__).</p>
+
+            <div class="article__code">
+              <h5 class="titre__html">HTML</h5>
+              <code><span><</span>div class="block__element"><<span>/</span>div></code>
+              <h5 class="titre__CSS">CSS</h5>
+              <code>.block__element { }</code>
+            </div><br>
+            <p> <strong> Notez les autres exemples suivants: </strong></p>
+            <div class="article__code">
+              <h5 class="titre__CSS">CSS</h5>
+              <code>
+                .header__logo { } <br>
+                .header__slogan { }<br>
+                .header__searchbar { }<br>
+                .header__menu { }
+              </code>
+            </div><br>
+
+
+            <!-- modificateurs BEM -->
+            <h4 class="titre__CSS">Modificateurs</h4>
+            <p>Nous utilisons les modificateurs pour changer les styles d'un élément spécifique.</p>
+            <p>La méthodologie BEM recommande que si un modificateur doit être créé, il doit être écrit en syntaxe en utilisant deux traits d'union (-) après le nom de l'élément ou du bloc à modifier.</p>
+            <div class="article__code">
+              <h5 class="titre__CSS">CSS</h5>
+              <code>
+               .header__navigation { } <br>
+              .header__navigation--secondary { }
+              </code>
+            </div>
+
+            <p>"L'un des avantages de la méthodologie BEM est l'utilisation d'une seule classe par élément dans le code"</p>
+          </article>
+
+          <!-- Fin du BEM -->
+
+        </section>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
